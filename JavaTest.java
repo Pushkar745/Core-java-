@@ -1,24 +1,27 @@
-
-class addtion 
-
-
+class alpha
 {
-        /**
-         * @param args
-         */
-        public static void main(String args[])
-{   
-        int a=55,b=55,c;
-        c=a+b;
-        System.out.println("The addition of given number " + c);
-        c=a-b;
-        System.out.println("The substraction of given number is" + c);
-        c=a*b;
-        System.out.println("The multiplication of given number is" + c);
-        c=a/b;
-        System.out.println("The divison " + c);
-
+    String a="Manasi";
+    public void fun()
+    {
+        System.out.println("This is fun"+a);
+    }
 }
-
+class Beta extends alpha
+{
+    String b="pushkar";
+    public void fun_1()
+    {
+        System.out.println("This is also fun "+b);
+    }
 }
+/**
+ * JavaTest
+ */
+public class JavaTest {
 
+    public static void main(String[] args) {
+        Beta b=new Beta();
+        b.fun();
+        b.fun_1();
+}
+}
